@@ -1,7 +1,7 @@
 <template lang="html">
     <div class="components-list">
         <article-item :article="article"></article-item>
-        <shared-title text="Latest on blog"></shared-title>
+        <shared-title text="Последнее в блоге"></shared-title>
         <article-list-concise></article-list-concise>
     </div>
 </template>

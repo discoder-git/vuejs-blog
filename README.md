@@ -1,6 +1,6 @@
-# linovetskiy.name
+# vuejs-blog
 
-> A Vue.js project
+> Personal SPA Blog builded with Vuejs and Firebase
 
 ## Build Setup
 

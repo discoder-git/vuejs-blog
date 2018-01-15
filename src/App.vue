@@ -51,7 +51,7 @@
                 </ul>
             </div>
             <div class="footer__item">
-                <small>Copyright 2017</small>
+                <small>Copyright 2017 ✌️+❤️</small>
             </div>
         </footer>
         <layout-overlay v-if="overlayActive"></layout-overlay>
