@@ -12,7 +12,7 @@
                 </router-link>
             </div>
             <div class="header__item">
-                <button class="button button--icon" title="Site settings will be available soon..." disabled>
+                <button class="button button--icon" title="Тут скоро будут доступны настройки сайта ;-)" disabled>
                     <icon name="cog" scale="2"></icon>
                 </button>
             </div>
@@ -28,27 +28,37 @@
         </main>
         <footer class="footer">
             <div class="footer__item">
-                <ul class="list">
-                    <li class="list__item">
-                        <router-link to="/about-project">О проекте</router-link>
-                    </li>
-                    <li class="list__item">
-                        <router-link to="/changelog">Изменения</router-link>
-                    </li>
-                </ul>
+                <dl>
+                    <dt>Подробности</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <router-link to="/about-project">О проекте</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/changelog">Изменения</router-link>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
             </div>
             <div class="footer__item">
-                <ul class="list">
-                    <li class="list__item">
-                        <a href="https://www.linkedin.com/in/nazar-linovetskiy/">LinkedIn</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="https://github.com/discoder-git">GitHub</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="https://www.upwork.com/o/profiles/users/_~018e4fd31af9ed3b05/">Upwork</a>
-                    </li>
-                </ul>
+                <dl>
+                    <dt>Контакты</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/nazar-linovetskiy/" title="перейти на linkedin.com">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/discoder-git" title="перейти на github.com">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://www.upwork.com/o/profiles/users/_~018e4fd31af9ed3b05/" title="перейти на upwork.com">Upwork</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
             </div>
             <div class="footer__item">
                 <small>Copyright 2017 ✌️+❤️</small>
@@ -511,6 +521,7 @@ label {
 
     .footer {
         grid-template-columns: 1fr;
+        grid-row-gap: 10px;
         padding: 20px 40px;
     }
 
