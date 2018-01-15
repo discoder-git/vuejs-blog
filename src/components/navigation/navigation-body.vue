@@ -5,7 +5,7 @@
                 <router-link class="navigation__link" :to="link.to">{{ link.text }}</router-link>
             </li>
         </ul>
-        <a class="navigation__close-button button button--icon" @click.prevent="onNavigationClose">
+        <a class="navigation__close-button button button--icon button--light" @click.prevent="onNavigationClose">
             <icon name="times" scale="2"></icon>
         </a>
     </nav>
@@ -52,6 +52,7 @@ export default {
     padding: 20px;
     min-height: 100%;
     background: @colorBasicGreenDark;
+    background-image: url('/src/assets/pattern_dark.jpg');
     transition: transform .3s ease-in-out;
 
     &.navigation--active {
@@ -62,10 +63,6 @@ export default {
         position: absolute;
         top: 20px;
         left: 20px;
-
-        &:hover {
-            color: @colorBasicWhite;
-        }
     }
 
     &__list {
@@ -80,7 +77,6 @@ export default {
         font-weight: 700;
         margin: 0 0 10px;
         list-style: none;
-        padding: 10px 20px;
 
         &:last-child {
             margin: 0;
@@ -93,6 +89,7 @@ export default {
 
     &__link {
         display: block;
+        padding: 10px 20px;
         color: @colorBasicYellow;
         font-size: 34px;
         line-height: 46px;

@@ -1,5 +1,5 @@
 <template lang="html">
-    <a class="button button--icon" @click.prevent="onNavigationOpen">
+    <a class="button button--icon button--dark" @click.prevent="onNavigationOpen">
         <icon name="bars" scale="2"></icon>
     </a>
 </template>

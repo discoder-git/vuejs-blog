@@ -259,7 +259,9 @@ label {
 .button {
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
     font-family: 'Average', serif;
+    background: none;
     cursor: pointer;
 
     &:disabled {
@@ -270,16 +272,25 @@ label {
         }
     }
 
-    &--icon {
-        width: 34px;
-        height: 34px;
-        text-align: center;
-        background: none;
+    &--dark {
         color: @colorBasicGray;
 
         &:hover {
             color: @colorBasicGreenDark;
         }
+    }
+
+    &--light {
+        color: @colorBasicWhite;
+
+        &:hover {
+            color: @colorBasicGreenDark;
+        }
+    }
+
+    &--icon {
+        width: 34px;
+        height: 34px;
     }
 }
 /* END: Form Elements */
