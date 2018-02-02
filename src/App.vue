@@ -53,9 +53,6 @@
                             <li>
                                 <a href="https://github.com/discoder-git" title="перейти на github.com">GitHub</a>
                             </li>
-                            <li>
-                                <a href="https://www.upwork.com/o/profiles/users/_~018e4fd31af9ed3b05/" title="перейти на upwork.com">Upwork</a>
-                            </li>
                         </ul>
                     </dd>
                 </dl>
