@@ -1,7 +1,7 @@
 {
   "name": "vuejs-blog",
   "description": "A Vue.js blog",
-  "version": "0.2.1",
+  "version": "0.2.6",
   "author": "Nazar Linovetskiy <discoder.hello@gmail.com>",
   "private": true,
   "scripts": {

@@ -12,7 +12,6 @@ export const store = new Vuex.Store({
         },
         page: {
             home: {
-                config: {},
                 ru: {
                     intro: {
                         title: 'Привет!👋',
@@ -31,43 +30,56 @@ export const store = new Vuex.Store({
                 }
             },
             article: {
-                config: {},
                 ru: {
                     intro: {
                         title: 'Блог',
-                        text: '<p>Статьи, уроки, дайджесты…</p>'
+                        subTitle: '',
+                        text: '<p>Статьи, уроки, дайджесты…</p>',
+                        image: ''
                     }
                 },
                 en: {
                     intro: {
                         title: 'Blog',
-                        text: '<p>Articles, Lessons, Digests…</p>'
+                        subTitle: '',
+                        text: '<p>Articles, Lessons, Digests…</p>',
+                        image: ''
                     }
                 }
             },
             aboutProject: {
-                config: {},
                 ru: {
                     intro: {
-                        title: 'О проекте'
+                        title: 'О проекте',
+                        subTitle: '',
+                        text: '',
+                        image: ''
                     }
                 },
                 en: {
                     intro: {
-                        title: 'About Project'
+                        title: 'About Project',
+                        subTitle: '',
+                        text: '',
+                        image: ''
                     }
                 }
             },
             changelog: {
-                config: {},
                 ru: {
                     intro: {
-                        title: 'Список изменений'
+                        title: 'Список изменений',
+                        subTitle: '',
+                        text: '',
+                        image: ''
                     }
                 },
                 en: {
                     intro: {
-                        title: 'Changelog'
+                        title: 'Changelog',
+                        subTitle: '',
+                        text: '',
+                        image: ''
                     }
                 }
             }
@@ -80,12 +92,7 @@ export const store = new Vuex.Store({
         },
         informer: {
             active: false,
-            ru: {
-                message: 'Хорошего дня, уважаемый пользователь! Заглядывай сюда ещё. ;-)'
-            },
-            en: {
-                message: 'Have a nice day! ;-)'
-            }
+            message: 'Have a nice day! ;-)'
         },
         loadedArticles: [
             {
