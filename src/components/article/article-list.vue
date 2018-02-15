@@ -25,8 +25,11 @@
 <script>
 export default {
     computed: {
+        lang () {
+            return this.$store.getters.lang
+        },
         articles () {
-            return this.$store.getters.loadedArticles
+            return this.$store.getters.loadedArticles(this.lang)
         }
     },
     methods: {

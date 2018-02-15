@@ -8,7 +8,7 @@ export const store = new Vuex.Store({
     state: {
         config: {
             online: false,
-            lang: 'ru'
+            lang: 'en'
         },
         page: {
             home: {
@@ -156,6 +156,9 @@ export const store = new Vuex.Store({
         }
     },
     getters: {
+        lang (state) {
+            return state.config.lang
+        },
         page (state) {
             return (pageName) => {
                 return state.page[pageName]
@@ -171,16 +174,15 @@ export const store = new Vuex.Store({
             return state.informer
         },
         loadedArticles (state) {
-            return state.loadedArticles.sort((articleA, articleB) => {
-                return articleA.date > articleB.date
-            })
-        },
-        featuredArticles (state, getters) {
-            return getters.loadedArticles.slice(0, 4)
+            return (lang) => {
+                return state.loadedArticles[lang].sort((articleA, articleB) => {
+                    return articleA.date > articleB.date
+                })
+            }
         },
         loadedArticle (state) {
             return (articleId) => {
-                return state.loadedArticles.find((article) => {
+                return state.loadedArticles.ru.find((article) => {
                     return article.id === articleId
                 })
             }
